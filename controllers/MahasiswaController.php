@@ -9,4 +9,10 @@ class MahasiswaController extends \yii\web\Controller
         return $this->render('profil');
     }
 
+    public function actionResetNilai($nim)
+    {
+        return "<h1>mahasiswa / reset-nilai ? nim = 2". $nim ."</h1";
+    }
+
+
 }
