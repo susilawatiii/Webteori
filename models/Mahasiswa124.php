@@ -5,13 +5,13 @@ namespace app\models;
 use Yii;
 
 /**
- * This is the model class for table "mahasiswa_124".
+ * This is the model class for table "mahasiswa124".
  *
  * @property int $id
- * @property string $nim
- * @property string $nama
+ * @property string $no_induk_mahasiswa
+ * @property string $nama_mahasiswa
  * @property string $kelas
- * @property string $jurusan
+ * @property string $status
  */
 class Mahasiswa124 extends \yii\db\ActiveRecord
 {
@@ -20,7 +20,7 @@ class Mahasiswa124 extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'mahasiswa_124';
+        return 'mahasiswa124';
     }
 
     /**
@@ -29,11 +29,9 @@ class Mahasiswa124 extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['nim', 'nama', 'kelas', 'jurusan'], 'required'],
-            [['nim'], 'string', 'max' => 20],
-            [['nama', 'jurusan'], 'string', 'max' => 100],
-            [['kelas'], 'string', 'max' => 50],
-            [['nim'], 'unique'],
+            [['no_induk_mahasiswa', 'nama_mahasiswa', 'kelas', 'status'], 'required'],
+            [['no_induk_mahasiswa', 'nama_mahasiswa', 'kelas', 'status'], 'string', 'max' => 100],
+            [['no_induk_mahasiswa'], 'unique'],
         ];
     }
 
@@ -43,17 +41,11 @@ class Mahasiswa124 extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
-            'nim' => 'No. Induk Mahasiswa',
-            'nama' => 'Nama Mahasiswa',
-            'kelas' => 'Kelas',
-            'jurusan' => 'Jurusan',
+            'id' => 'ID124',
+            'no_induk_mahasiswa' => 'No Induk Mahasiswa124',
+            'nama_mahasiswa' => 'Nama Mahasiswa124',
+            'kelas' => 'Kelas124',
+            'status' => 'Status124',
         ];
     }
-
-    public function getprofil_124()
-    {
-        return $this->hasOne(profil124::className(), ['id' => 'id']);
-    }
- 
 }

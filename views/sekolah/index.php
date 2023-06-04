@@ -12,13 +12,13 @@
     GridView::widget([
         'dataProvider' => $dataProvider,
         'columns' => [
-            'profil_124.id',
+            ['class' =>'yii\grid\SerialColumn'],
             'id',
-            'nim',
-            'nama',
-            'kelas',
-            //'jurusan',
-            'profil_124.foto_profil',
+            'npsn',
+            'alamat',
+            'kelurahan',
+            'kode_kecamatan',
+            
         [
             'class' => 'yii\grid\ActionColumn',
             'template' => '{view} {update} {delete}',
