@@ -1,0 +1,37 @@
+<!-- ========== Left Sidebar Start ========== -->
+
+<div class="left side-menu">
+    <div class="sidebar-inner slimscrollleft">
+        <!--- Divider -->
+        <div id="sidebar-menu">
+            <ul>
+                <li class="has_sub">
+                    <a href="<?=Url::to(['mahasiswa124/index'])?>" class="waves-effect">
+                    <i class="fafa-mortar-board"></i>
+                    <span>Mahasiswa </span>
+                </a>
+    
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    </div>
+    <!-- Left Sidebar End -->
+    
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="content-page">
+    <!-- Start content -->
+    <div class="content">
+        <div class="container">
+            <?= $content ?>
+        </div> <!-- container -->
+                   
+    </div> <!-- content -->
+    
+    <footer class="footer">
+        © 2016. All rights reserved.
+    </footer>
