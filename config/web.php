@@ -66,7 +66,7 @@ $config = [
                     'basePath' => '@webroot',
                     'baseUrl' => '@web',
                     'css' => [
-                        'template124/css/bootstrap.min.css'
+                        'template124/css/boostrap.min.css'
                     ],
                 ],
             ],

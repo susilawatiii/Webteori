@@ -28,11 +28,14 @@ class AppAsset124 extends AssetBundle
 
     ];
     public $js = [
+        
         'template124/https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js',
         'template124/https://code.jquery.com/jquery-3.4.1.min.js',
         'template124/lib/easing/easing.min.js',
+        'template124/lib/easing/easing.js',
         'template124/lib/waypoints/waypoints.min.js',
         'template124/lib/owlcarousel/owl.carousel.min.js',
+        'template124/js/main.js',
 
     ];
     public $depends = [

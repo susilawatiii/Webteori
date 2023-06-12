@@ -25,48 +25,23 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 <html lang="<?= Yii::$app->language ?>" class="h-100">
 <head>
     <title><?= Html::encode($this->title) ?></title>
+    <!-- Favicon -->
+    <link href="template124/img/favicon.ico" rel="icon">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">  
+
     <?php $this->head() ?>
 </head>
-<body class="d-flex flex-column h-100">
+<body>
+    
+</body>
 <?php $this->beginBody() ?>
 
 
-<!-- Topbar Start -->
-<div class="container-fluid bg-primary d-none d-lg-block">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
-                    <div class="d-inline-flex align-items-center">
-                        <a class="text-dark py-2 pe-3 border-end border-white" href=""><i class="bi bi-telephone text-secondary me-2"></i>+62 823 4990 7245</a>
-                        <a class="text-dark py-2 px-3" href=""><i class="bi bi-envelope text-secondary me-2"></i>susilawatiii@gmail.com</a>
-                    </div>
-                </div>
-                <div class="col-md-6 text-center text-lg-end">
-                    <div class="d-inline-flex align-items-center">
-                        <a class="text-body py-2 px-3 border-end border-white" href="">
-                            <i class="fab fa-facebook-f text-secondary"></i>
-                        </a>
-                        <a class="text-body py-2 px-3 border-end border-white" href="">
-                            <i class="fab fa-twitter text-secondary"></i>
-                        </a>
-                        <a class="text-body py-2 px-3 border-end border-white" href="">
-                            <i class="fab fa-linkedin-in text-secondary"></i>
-                        </a>
-                        <a class="text-body py-2 px-3 border-end border-white" href="">
-                            <i class="fab fa-instagram text-secondary"></i>
-                        </a>
-                        <a class="text-body py-2 ps-3" href="">
-                            <i class="fab fa-youtube text-secondary"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm px-5 py-3 py-lg-0">
+    <nav  class="navbar nav-justified navbar-expand-lg bg-dark navbar-dark shadow-sm px-5 py-3 py-lg-0" style="position:fixed; width:100%; z-index:10;">
         <a href="index.html" class="navbar-brand p-0">
             <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-paint-roller text-secondary me-3"></i>Susilawati</h1>
         </a>
@@ -75,7 +50,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0 pe-4 border-end border-5 border-primary">
-                <a href="<?=Url::to(['mahasiswa124/index'])?>" class="nav-item nav-link active">Home</a>
+                <a href="<?=Url::to(['site/index'])?>" class="nav-item nav-link active">Home</a>
                 <a href="<?=Url::to(['mahasiswa124/index'])?>" class="nav-item nav-link">Mahasiswa</a>
                 <a href="service.html" class="nav-item nav-link">Service</a>
                 
